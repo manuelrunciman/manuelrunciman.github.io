@@ -4,9 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel Runciman | Portafolio</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0d1117; /* Color oscuro estilo GitHub */
+            color: #c9d1d9; /* Texto claro */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Encabezado */
+        header {
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #58a6ff; /* Azul tecnológico */
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #ffffff;
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 40px;
+        }
+        
+        /* Cajas de proyectos */
+        .proyecto-card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .proyecto-card:hover {
+            transform: translateY(-5px);
+            border-color: #58a6ff;
+        }
+
+        /* Etiquetas de habilidades */
+        .habilidades-lista {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding: 0;
+        }
+        .habilidades-lista li {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            color: #58a6ff;
+        }
+
+        /* Contacto */
+        .contacto {
+            background-color: #161b22;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #30363d;
+        }
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Hola! Soy Manuel Runciman</h1>
-    <p>Estudiante de Ingeniería de Sistemas orientado al desarrollo de software y la gestión de proyectos. Creador de soluciones tecnológicas usando Java, C++ y SQL. Preparándome para aportar innovación a la industria tecnológica en 2027.</p>
+
+    <div class="container">
+        
+        <!-- ENCABEZADO Y SOBRE MÍ -->
+        <header>
+            <h1>Manuel Runciman</h1>
+            <p style="font-size: 1.2em; color: #8b949e;">Futuro Ingeniero de Sistemas | Desarrollo de Software & Gestión de Proyectos</p>
+        </header>
+
+        <section id="sobre-mi">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Manuel Runciman. Estudiante de Ingeniería de Sistemas en la Universidad Norbert Wiener, con un fuerte enfoque en el desarrollo de software y la gestión de proyectos. Creador de soluciones tecnológicas eficientes enfocadas en resolver problemas reales. Me encuentro construyendo mi base técnica para aportar innovación y valor en equipos de desarrollo en la industria tecnológica hacia el 2027.</p>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades">
+            <h2>Habilidades Técnicas</h2>
+            <ul class="habilidades-lista">
+                <li>Java</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>Gestión de Proyectos</li>
+                <li>Integración Hardware/Software</li>
+            </ul>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            
+            <div class="proyecto-card">
+                <h3>Dashboard Administrativo con Inteligencia Artificial</h3>
+                <p><strong>Objetivo:</strong> Optimizar la gestión y el análisis de datos para pequeñas empresas.</p>
+                <p>Plataforma diseñada para analizar métricas comerciales. El proyecto incluyó la elaboración de reportes de tamaño de mercado y estructuración de la herramienta para facilitar la toma de decisiones empresariales.</p>
+            </div>
+
+            <div class="proyecto-card">
+                <h3>Bastón Inteligente de Accesibilidad (ESP32)</h3>
+                <p><strong>Objetivo:</strong> Asistir a personas con discapacidad visual en su movilidad diaria.</p>
+                <p>Desarrollo de un dispositivo de asistencia integrando hardware (microcontrolador ESP32) y software. El proyecto abarcó desde el diseño de la arquitectura y la estrategia del producto hasta la implementación técnica.</p>
+            </div>
+        </section>
+
+        <!-- EDUCACIÓN Y CERTIFICACIONES -->
+        <section id="certificaciones">
+            <h2>Formación y Certificaciones</h2>
+            <ul>
+                <li><strong>Ingeniería de Sistemas</strong> - Universidad Norbert Wiener (En curso)</li>
+                <li><strong>Programa Impulsando Talento con Valores</strong> - Asociación Ferreycorp (2026). <br> <span style="color: #8b949e; font-size: 0.9em;">Enfoque en Habilidades Personales, Empleabilidad, Liderazgo y Pensamiento Crítico.</span></li>
+            </ul>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="contacto">
+                <p>¿Interesado en mi perfil? Contáctame:</p>
+                <p>Email: <a href="mailto:dm.runciman@gmail.com">dm.runciman@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/manuelrunciman" target="_blank">github.com/manuelrunciman</a></p>
+                <p>Web: <a href="https://manuelrunciman.github.io">manuelrunciman.github.io</a></p>
+            </div>
+        </section>
+
+    </div>
+
 </body>
 </html>
